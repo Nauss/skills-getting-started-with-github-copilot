@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Participants section
     const participantsSection = document.createElement("div");
     participantsSection.className = "participants-section";
-    const participantsTitle = document.createElement("span");
+    const participantsTitle = document.createElement("h5");
     participantsTitle.className = "participants-title";
     participantsTitle.textContent = "Participants:";
     participantsSection.appendChild(participantsTitle);
