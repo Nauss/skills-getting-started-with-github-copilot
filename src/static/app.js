@@ -51,6 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
     max.innerHTML = `<strong>Max participants:</strong> ${activity.max_participants}`;
     card.appendChild(max);
 
+    // Calculate and display remaining spots
+    const spotsLeft = activity.max_participants - (activity.participants?.length || 0);
+    const spots = document.createElement("p");
+    spots.innerHTML = `<strong>Spots left:</strong> ${spotsLeft}`;
+    card.appendChild(spots);
     // Participants section
     const participantsSection = document.createElement("div");
     participantsSection.className = "participants-section";
